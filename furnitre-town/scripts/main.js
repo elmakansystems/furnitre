@@ -3,7 +3,7 @@ window.onload = ()=>{
     const images = document.querySelectorAll(".logo-cont img")
     const mainImage = document.querySelector(".main-logo img")
     const brands = document.querySelectorAll(".logo-cont")
-    mainImage.click()
+    document.click()
     setTimeout(() => {
     let i =0
         let addClass = setInterval(() => {
