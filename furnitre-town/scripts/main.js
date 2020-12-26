@@ -32,6 +32,7 @@ setTimeout(() => {
 
     setTimeout(() => {
         const music = document.getElementById("bgMusic")
+         music.click()
         music.play()
     }, 2000)
     
