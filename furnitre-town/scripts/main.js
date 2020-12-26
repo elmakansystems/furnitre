@@ -3,6 +3,8 @@ window.onload = ()=>{
     const images = document.querySelectorAll(".logo-cont img")
     const mainImage = document.querySelector(".main-logo img")
     const brands = document.querySelectorAll(".logo-cont")
+
+    // var context = new AudioContext();
     setTimeout(() => {
     let i =0
         let addClass = setInterval(() => {
@@ -32,17 +34,13 @@ setTimeout(() => {
 
     let play = ()=>{
         const music = document.getElementById("bgMusic")
-        console.log("clicked");
         music.play()
     }
-    // document.addEventListener("click" , play)
-  
-    const btn = document.getElementById("audioplayer")
-    
-    btn.addEventListener("click" , play)
 
-    setTimeout(() => {
-        btn.click()
-    }, 4000)
+    document.addEventListener("click" , play)
+
+
+
     
+
 }
