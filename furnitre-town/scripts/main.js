@@ -3,7 +3,6 @@ window.onload = ()=>{
     const images = document.querySelectorAll(".logo-cont img")
     const mainImage = document.querySelector(".main-logo img")
     const brands = document.querySelectorAll(".logo-cont")
-   
     setTimeout(() => {
     let i =0
         let addClass = setInterval(() => {
@@ -31,13 +30,19 @@ setTimeout(() => {
     }, 2000)
 
 
-     let play = ()=>{
+    let play = ()=>{
         const music = document.getElementById("bgMusic")
+        console.log("clicked");
         music.play()
     }
-        
-    window.addEventListener("click" , play)
-
+    // document.addEventListener("click" , play)
+  
+    const btn = document.getElementById("audioplayer")
     
+    btn.addEventListener("click" , play)
+
+    setTimeout(() => {
+        btn.click()
+    }, 4000)
     
 }
