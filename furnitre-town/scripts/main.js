@@ -33,7 +33,7 @@ setTimeout(() => {
     setTimeout(() => {
         const music = document.getElementById("bgMusic")
         music.play()
-    }, 10000)
+    }, 2000)
     
     
 }
